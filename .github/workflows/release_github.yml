@@ -157,7 +157,7 @@ jobs:
 
   release:
     if: github.event_name == 'push' || github.event.inputs.tag != ''
-    needs: [build_win, build_mac, build_appimage]
+    needs: [build_win, build_appimage]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
