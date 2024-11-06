@@ -648,6 +648,7 @@ ACTIONS = MappingProxyType(
                 translate("Audio Volume", "Mute"),
                 translate("Audio Volume", "Unmute"),
             ),
+            "key": "M",
             "icon": ("volume-mute", "volume-unmute"),
             "toggle": ("is_active_param_set_to", "is_muted", True),
             "show_if": "is_active_has_audio",
